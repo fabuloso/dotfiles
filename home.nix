@@ -17,7 +17,9 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
+    bitwarden
+    bitwarden-cli
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -54,7 +56,7 @@
   # You can also manage environment variables but you will have to manually
   # source
   #
-  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
+  # ~/.nix-profile/etc/profile.d/hm-session-vars.sh
   #
   # or
   #
@@ -67,4 +69,47 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.firefox =
+    {
+      enable = true;
+      package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
+        extraPolicies = {
+          CaptivePortal = false;
+          DisableFirefoxStudies = true;
+          DisablePocket = true;
+          DisableTelemetry = true;
+          DisableFirefoxAccounts = false;
+          NoDefaultBookmarks = true;
+          OfferToSaveLogins = false;
+          OfferToSaveLoginsDefault = false;
+          PasswordManagerEnabled = false;
+          FirefoxHome = {
+            Search = true;
+            Pocket = false;
+            Snippets = false;
+            TopSites = false;
+            Highlights = false;
+          };
+          UserMessaging = {
+            ExtensionRecommendations = false;
+            SkipOnboarding = true;
+          };
+        };
+      };
+    };
+
+  programs.git = {
+    enable = true;
+    userName = "";
+    userEmail = "";
+    aliases = {
+      "ga" = "add .";
+      "gc" = "commit -m";
+      "gst" = "status";
+    };
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
+  };
 }
