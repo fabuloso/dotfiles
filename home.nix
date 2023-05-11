@@ -20,6 +20,7 @@
   home.packages = with pkgs; [
     bitwarden
     bitwarden-cli
+    slack
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
