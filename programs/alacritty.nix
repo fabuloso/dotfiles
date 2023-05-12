@@ -2,8 +2,7 @@
 {
   programs.alacritty = {
     enable = true;
-    settings = {
-      font.size = 11;
+    settings = lib.attrsets.recursiveUpdate (import ./config/alacritty.nix) {
       shell.program = "/usr/bin/zsh";
     };
   };
