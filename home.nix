@@ -55,6 +55,10 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  imports = [
+    ~/Projects/fabuloso/nix-dotfiles/programs/alacritty.nix
+  ];
+
   programs.firefox =
     {
       enable = true;
