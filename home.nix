@@ -21,6 +21,7 @@
     bitwarden
     bitwarden-cli
     slack
+    pkgs.nixgl.auto.nixGLDefault
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -58,6 +59,7 @@
   imports = [
     ./programs/alacritty.nix
     ./programs/firefox.nix
+    ./programs/git.nix
   ];
 
 }

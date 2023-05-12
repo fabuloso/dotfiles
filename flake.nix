@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of alessandrodalfovo";
+  description = "Home Manager configuration of mine";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
@@ -21,6 +21,7 @@
       pkgs = nixpkgs.legacyPackages.${system} // {
         inherit system;
         config = { allowUnfree = true; };
+        overlays = [ nixgl.overlay ];
       };
     in
     {
