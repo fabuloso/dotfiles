@@ -1,7 +1,6 @@
 { config, pkgs, nixgl, ... }:
 
 {
-  imports = [ ./nixgl.nix ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "alessandrodalfovo";
@@ -23,7 +22,6 @@
     bitwarden-cli
     slack
     tdesktop
-    pkgs.nixgl.auto.nixGLDefault
   ];
 
   home.file = { };
@@ -36,6 +34,7 @@
   programs.home-manager.enable = true;
 
   imports = [
+    ./nixgl.nix
     ./programs/alacritty.nix
     ./programs/firefox.nix
     ./programs/git.nix
