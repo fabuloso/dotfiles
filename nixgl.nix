@@ -19,6 +19,7 @@ in
           };
 
         alacritty = self.nixglWrapper super.alacritty;
+        kitty = self.nixglWrapper super.kitty;
       });
     in
     [ nixgl.overlay nixgl_stuff ];

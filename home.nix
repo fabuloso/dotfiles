@@ -22,9 +22,9 @@
     bitwarden-cli
     slack
     tdesktop
+    kitty
+    alacritty
   ];
-
-  home.file = { };
 
   home.sessionVariables = {
     EDITOR = "nvim";
@@ -35,9 +35,12 @@
 
   imports = [
     ./nixgl.nix
-    ./programs/alacritty.nix
     ./programs/firefox.nix
     ./programs/git.nix
   ];
+
+  home.file = {
+    "./config/alacritty/alacritty.yml".source = ./programs/config/alacritty.yml;
+  };
 
 }
