@@ -21,6 +21,7 @@ in
         alacritty = self.nixglWrapper super.alacritty;
         kitty = self.nixglWrapper super.kitty;
         telegram = self.nixglWrapper super.tdesktop;
+        firefox = self.nixglWrapper super.firefox;
       });
     in
     [ nixgl.overlay nixgl_stuff ];
