@@ -17,9 +17,10 @@
 
   outputs = { self, nixpkgs, nixpkgs-unstable, nixgl, home-manager, ... }:
     let
-      # pkgs = nixpkgs.legacyPackages.${system} // {
-      pkgs = import nixpkgs {
-        system = "x86_64-linux";
+      system = "x86_64-linux";
+
+      pkgs = nixpkgs.legacyPackages.${system} // {
+        inherit system;
         config = { allowUnfree = true; };
       };
     in

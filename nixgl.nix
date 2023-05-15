@@ -18,9 +18,7 @@ in
               (attrNames (readDir "${drv}/bin"))) ++ [ drv ];
           };
 
-        kitty = self.nixglWrapper super.kitty;
-        picom = self.nixglWrapper super.picom;
-        i3fancy-lock = self.nixglWrapper super.i3fancy-lock;
+        alacritty = self.nixglWrapper super.alacritty;
       });
     in
     [ nixgl.overlay nixgl_stuff ];
