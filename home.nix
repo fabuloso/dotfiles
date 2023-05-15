@@ -24,6 +24,9 @@
     tdesktop
     kitty
     alacritty
+    spotify
+    discord
+    _1password
   ];
 
   home.sessionVariables = {
