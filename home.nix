@@ -18,6 +18,11 @@
     vscode
     spotify
     discord
+    zoxide
+    zoom
+    zsh
+    tig
+    lsd
     _1password
   ];
 

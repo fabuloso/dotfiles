@@ -20,7 +20,7 @@ in
 
         alacritty = self.nixglWrapper super.alacritty;
         kitty = self.nixglWrapper super.kitty;
-        telegram-desktop = self.nixglWrapper super.telegram-desktop;
+        tdesktop = self.nixglWrapper super.tdesktop;
         firefox = self.nixglWrapper super.firefox;
       });
     in
