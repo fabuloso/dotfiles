@@ -40,8 +40,8 @@
   ];
 
   home.file = {
-    "./config/alacritty/alacritty.yml".source = ./programs/config/alacritty.yml;
-    "./config/kitty".source = ./programs/config/kitty;
+    "./.config/alacritty/alacritty.yml".source = ./programs/config/alacritty.yml;
+    "./.config/kitty".source = ./programs/config/kitty;
   };
 
 }
