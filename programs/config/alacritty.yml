@@ -120,9 +120,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-      family: Hurmit Nerd Font
-    # The `style` can be specified to pick a specific face.
-    style: Regular
+    family: Hurmit Nerd Font
 
   # Bold font face
   bold:
@@ -139,9 +137,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-      family: Hurmit Nerd Font
-    # The `style` can be specified to pick a specific face.
-    style: Bold
+    family: Hurmit Nerd Font
 
   # Italic font face
   italic:
@@ -158,10 +154,7 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-      family: Hurmit Nerd Font
-
-    # The `style` can be specified to pick a specific face.
-    style: Italic
+    family: Hurmit Nerd Font
 
   # Bold italic font face
   bold_italic:
@@ -178,12 +171,10 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-      family: Hurmit Nerd Font
-    # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+    family: Hurmit Nerd Font
 
   # Point size
-  size: 20.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -561,7 +552,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *DoomOne
+colors: *Nord
 
 # Visual Bell
 #
@@ -584,8 +575,8 @@ colors: *DoomOne
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-#visual_bell:
-#  animation: EaseOutExpo
+visual_bell:
+  animation: EaseOutExpo
 #  duration: 0
 #  color: '#ffffff'
 
@@ -612,7 +603,7 @@ colors: *DoomOne
 #unfocused_hollow: true
 
 # Live config reload (changes require restart)
-#live_config_reload: true
+live_config_reload: true
 
 # Shell
 #
