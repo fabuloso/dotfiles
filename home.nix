@@ -20,7 +20,6 @@
     spotify
     discord
     zoxide
-    zoom
     zsh
     tig
     lsd
