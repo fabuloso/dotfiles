@@ -120,7 +120,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: Hurmit Nerd Font
+    family: Victor Mono Regular
 
   # Bold font face
   bold:
@@ -137,7 +137,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: Hurmit Nerd Font
+    family: Victor Mono Bold
 
   # Italic font face
   italic:
@@ -154,7 +154,7 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: Hurmit Nerd Font
+    family: Victor Mono Extralight Italic
 
   # Bold italic font face
   bold_italic:
@@ -171,7 +171,7 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: Hurmit Nerd Font
+    family: Victor Mono Semibold Italic
 
   # Point size
   size: 16.0
