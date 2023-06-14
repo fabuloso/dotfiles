@@ -4,7 +4,7 @@
   home.username = "alessandrodalfovo";
   home.homeDirectory = "/home/alessandrodalfovo";
 
-  home.stateVersion = "22.11";
+  home.stateVersion = "23.05";
 
   home.packages = with pkgs; [
     btop
@@ -23,7 +23,7 @@
     zsh
     tig
     lsd
-    _1password
+		_1password
   ];
 
   home.sessionVariables = {
