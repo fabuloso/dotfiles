@@ -23,7 +23,8 @@
     zsh
     tig
     lsd
-		_1password
+    _1password
+    k9s
   ];
 
   home.sessionVariables = {

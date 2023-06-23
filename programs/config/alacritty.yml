@@ -118,10 +118,10 @@ font:
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
+    family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
     # family: Victor Mono Regular
-    family: VictorMono Nerd Font
+    # family: VictorMono Nerd Font
 
   # Bold font face
   bold:
@@ -136,10 +136,10 @@ font:
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
+    family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
     # family: Victor Mono Bold
-    family: VictorMono Nerd Font
+    # family: VictorMono Nerd Font
 
   # Italic font face
   italic:
@@ -154,10 +154,10 @@ font:
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
+    family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
     # family: Victor Mono Extralight Italic
-    family: VictorMono Nerd Font
+    # family: VictorMono Nerd Font
 
   # Bold italic font face
   bold_italic:
@@ -172,10 +172,10 @@ font:
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
+    family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
     # family: Victor Mono Semibold Italic
-    family: VictorMono Nerd Font
+    # family: VictorMono Nerd Font
 
   # Point size
   size: 16.0
